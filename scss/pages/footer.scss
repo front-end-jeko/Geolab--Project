@@ -1,0 +1,50 @@
+.footer {
+    height: 90px;
+    line-height: 90px;
+    background-color: $color-white;
+    .footer__content {
+        @include display($align: center);
+        &-copyright {
+            span {
+                color: 00000;
+                font-size: 14px;
+                font-family: $MontserratRegular;
+            }
+        }
+    }
+    .footer__social {
+        flex-basis: 40%;
+        @include display($flex:inherit);
+        &-a {
+            margin-left: 10px;         
+            width: 40px;
+            height: 40px;
+            font-size: 19px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: $color-black1;
+            transition: all 0.3s;
+            @include display($justify: center, $align:center, );
+            span {
+                color: $color-white;
+                font-size: 18px;
+                text-align: center; 
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px){
+    .footer {
+        height: auto;
+        .footer__content-copyright {
+            line-height: 50px;
+        }
+        .footer__content {
+            @include display($direction:column, $justify:center);
+            padding-bottom: 20px;
+            text-align: center;
+        }
+    }
+}

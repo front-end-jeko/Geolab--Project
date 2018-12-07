@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'MontserratRegular';
+    src: url('../fonts/montserrat/regular/');
+    src: url('../fonts/montserrat/regular/') format('embedded-opentype'),
+         url('../fonts/montserrat/regular/MontserratRegular.woff2') format('woff2'),
+         url('../fonts/montserrat/regular/MontserratRegular.woff') format('woff'),
+         url('../fonts/montserrat/regular/MontserratRegular.ttf') format('truetype'),
+         url('../fonts/montserrat/regular/MontserratRegular.svg#MontserratRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: url('../fonts/montserrat/bold/');
+    src: url('../fonts/montserrat/bold/') format('embedded-opentype'),
+         url('../fonts/montserrat/bold//MontserratBold.woff2') format('woff2'),
+         url('../fonts/montserrat/bold//MontserratBold.woff') format('woff'),
+         url('../fonts/montserrat/bold//MontserratBold.ttf') format('truetype'),
+         url('../fonts/montserrat/bold//MontserratBold.svg#MontserratBold') format('svg');
+}
+
+@font-face {
+    font-family: 'DroidSerifItalic';
+    src: url('../fonts/droid-serif/DroidSerifItalic.eot');
+    src: url('../fonts/droid-serif/DroidSerifItalic.eot') format('embedded-opentype'),
+         url('../fonts/droid-serif/DroidSerifItalic.woff2') format('woff2'),
+         url('../fonts/droid-serif/DroidSerifItalic.woff') format('woff'),
+         url('../fonts/droid-serif/DroidSerifItalic.ttf') format('truetype'),
+         url('../fonts/droid-serif/DroidSerifItalic.svg#DroidSerifItalic') format('svg');
+}
+
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/roboto/regular/');
+    src: url('../fonts/roboto/regular/') format('embedded-opentype'),
+         url('../fonts/roboto/regular/RobotoRegular.woff2') format('woff2'),
+         url('../fonts/roboto/regular/RobotoRegular.woff') format('woff'),
+         url('../fonts/roboto/regular/RobotoRegular.ttf') format('truetype'),
+         url('../fonts/roboto/regular/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url('../fonts/roboto/bold/');
+    src: url('../fonts/roboto/bold/') format('embedded-opentype'),
+         url('../fonts/roboto/bold/RobotoBold.woff2') format('woff2'),
+         url('../fonts/roboto/bold/RobotoBold.woff') format('woff'),
+         url('../fonts/roboto/bold/RobotoBold.ttf') format('truetype'),
+         url('../fonts/roboto/bold/RobotoBold.svg#RobotoBold') format('svg');
+}
+
+
+
+// icon fonts
+ @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icons/icomoon.eot?8dfx12');
+    src:  url('../fonts/icons/icomoon.eot?8dfx12#iefix') format('embedded-opentype'),
+      url('../fonts/icons/icomoon.ttf?8dfx12') format('truetype'),
+      url('../fonts/icons/icomoon.woff?8dfx12') format('woff'),
+      url('../fonts/icons/icomoon.svg?8dfx12#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-plus1:before {
+    content: "\e908";
+  }
+  .icon-plus:before {
+    content: "\ea0a";
+  }
+  .icon-menu:before {
+    content: "\e900";
+    color: #fff;
+  }
+  .icon-facebook:before {
+    content: "\e901";
+  }
+  .icon-google-plus-g-brands:before {
+    content: "\e902";
+  }
+  .icon-Icon-Basket1x:before {
+    content: "\e903";
+    color: #fed136;
+  }
+  .icon-Icon-Laptop1x:before {
+    content: "\e904";
+    color: #fed136;
+  }
+  .icon-Icon-Locked1x:before {
+    content: "\e905";
+    color: #fed136;
+  }
+  .icon-pinterest-p-brands:before {
+    content: "\e906";
+  }
+  .icon-twitter-brands:before {
+    content: "\e907";
+  }
+  
+  

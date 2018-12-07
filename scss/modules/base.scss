@@ -1,0 +1,136 @@
+::-moz-selection {
+    background: #fed136;
+    text-shadow: none
+}
+
+::selection {
+    background: #fed136;
+    text-shadow: none;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #fed136; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fec810; 
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 992px){
+    .container {
+        max-width: 720px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .container {
+        max-width: 540px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 574px){
+    .container {
+        padding: 0 15px;
+        width: 100%;
+    }
+}
+
+body {
+    position: relative;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.align-items {
+    align-items: center;
+}
+
+.row-reverse {
+    flex-direction: row-reverse !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.p-t-b {
+    padding: 120px 0;
+}
+
+.p-t-b-2 {
+    padding: 60px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.section-top .section-title {
+    font-size: 2.5em;
+    color: $color-black1;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: $MontserratBold;
+}
+
+.section-top .section-paragrap {
+    font-size: 1em;
+    font-style: italic;
+    color: $color-gray1;
+    margin-bottom: 80px;
+    font-family: $DroidSerifItalic;
+}
+
+@media (max-width: 500px){
+    .section-top {
+        font-size: 0.8em;
+    }
+}
+
+.btn--lg {
+    font-size: 18px;
+    color: $color-white;
+    border-radius: 3px;
+    width: 240px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: $MontserratBold;
+    background-color: $color-yellow;
+    transition: all 0.3s linear;
+    &:hover {
+        background-color: #fec810;
+    }
+}

@@ -1,0 +1,130 @@
+.team {
+    background-color: #f9f9f9;
+    .team__section {
+        &-container {
+            @include display($justify: space-between, $direction: row);
+        }
+
+        &-image {
+            width: 222px;
+            height: 222px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                cursor: pointer
+            }
+        }
+
+        &-info {
+            text-align: center;
+            .member-name {
+                font-size: 16px;
+                margin-top: 30px;
+                margin-bottom: 12px;
+                font-family: $RobotoBold;
+            }
+
+            .member-post {
+                font-size: 14px;
+                color: $color-gray2;
+                margin-bottom: 13px;
+                font-family: $RobotoRegular;
+            }
+
+            .member-social {
+                a:not(:first-child) {
+                    margin-left: 10px;
+                }
+
+                a {
+                    width: 40px; 
+                    height: 40px;
+                    line-height: 40px;
+                    font-size: 19px;
+                    border-radius: 50%;
+                    color: $color-black1;
+                    border: 2px solid $color-black1;
+                    transition: border 0.1s, background-color 0.3s;
+                }
+            }
+        }
+
+        &-item:not(:first-child) {
+            margin-left: 60px;
+        }
+    }
+}
+
+.member-social,
+.footer__social {
+    @include display($justify: center);
+    a{
+    &.wtitter:hover {
+        background-color: $color-sky;
+        border: 2px solid $color-sky;
+    }
+
+    &.facebook:hover {
+        background-color: $color-blue;
+        border: 2px solid $color-blue;
+    }
+
+    &.pinterest:hover {
+        background-color: $color-red;
+        border: 2px solid $color-red;
+    }
+
+    &.Gplus:hover {
+        background-color: $color-orange;
+        border: 2px solid $color-orange;
+    }
+
+    &.wtitter:hover span,
+    &.facebook:hover span,
+    &.pinterest:hover span,
+    &.Gplus:hover span{
+        color: #fff;
+    }
+}
+}
+
+
+
+@media (max-width: 992px){
+    .team {
+        .team__section{
+            &-item {
+                width: 33.333%;
+            }
+    
+            &-image {
+                width: 180px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .team  {
+        .team__section{
+            &-container {
+                flex-direction: column;
+            }
+    
+            &-item {
+                width: 100%;              
+                margin-left: 0px !important;
+                &:not(:last-child){
+                    margin-bottom: 50px;
+                }
+            }
+    
+            &-image {
+                width: 230px;
+                height: 230px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
