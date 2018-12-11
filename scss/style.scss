@@ -1,8 +1,15 @@
+// Modules
 @import 'modules/variable';
 @import 'modules/mixin';
+@import 'modules/base';
+
+
+// Partials
 @import 'partials/reset';
 @import 'partials/fonts';
-@import 'modules/base';
+
+
+// All Pages
 @import 'pages/header';
 @import 'pages/banner';
 @import 'pages/services';
@@ -12,4 +19,8 @@
 @import 'pages/sponsor';
 @import 'pages/contact';
 @import 'pages/footer';
+
+
+// components
 @import 'components/__loader.scss';
+@import 'components/_scrollTop';

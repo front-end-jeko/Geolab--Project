@@ -1,0 +1,21 @@
+.scroll__top {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    text-indent: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: $color-yellow url(../images/cd-top-arrow.svg) no-repeat center 50%;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: #fec810;
+    }
+  }
