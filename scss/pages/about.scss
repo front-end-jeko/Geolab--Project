@@ -16,14 +16,17 @@
     &-li {
         position: relative;
         @include display($direction:row);
-        margin-bottom: 90px;
-        min-height: 12px;
+        min-height: 160px;
         &.row-reverse {
             .about__section-content {
                 padding-left: 43px;
                 padding-right: 0;
             }
         }
+    }
+
+    &-li:not(:last-child){
+        margin-bottom: 90px;
     }
 
     &-image {
@@ -94,6 +97,10 @@
             width: 100px;
             height: 100px;
             @include position($left: 40px, $top: 0);
+        }
+
+        &--bottom-item {
+            top: 60px;
         }
 
         &-content {

@@ -29,6 +29,9 @@ document.getElementById('burger-menu').addEventListener('click', function(e){
   e.stopPropagation();
 })
 
+
+
+
 document.addEventListener('click', function(){
   var navbar = document.getElementById('navbar');
   navbar.className = 'header__navbar';
@@ -42,10 +45,11 @@ document.addEventListener('click', function(){
 
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
+  var header = document.querySelector(".header");
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.querySelector(".header").className = 'header active';
+    header.className = 'header active';
   } else {
-    document.querySelector(".header").className = 'header';
+    header.className = 'header';
   }
 }
 
@@ -62,9 +66,10 @@ $(document).ready(function() {
 
 // Background Animation
 setInterval(() => {
-  document.querySelector('.cube-container').style.opacity = '0';
-  document.querySelector('.cube-container').style.visibility = 'hidden';
-}, 5000);
+  var cube = document.querySelector('.cube-container');
+  cube.style.opacity = '0';
+  cube.style.visibility = 'hidden';
+});
 
 
 
@@ -76,3 +81,9 @@ $(document).on( 'scroll', function(){
       $('#scrollTop').css({"opacity": "0", "visibility": "hidden"});
   }
 });
+
+
+
+// wow.js
+new WOW().init();
+
