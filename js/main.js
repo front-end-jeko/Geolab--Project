@@ -69,7 +69,8 @@ setInterval(() => {
   var cube = document.querySelector('.cube-container');
   cube.style.opacity = '0';
   cube.style.visibility = 'hidden';
-});
+}, 4000);
+
 
 
 
