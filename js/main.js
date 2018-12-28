@@ -1,4 +1,4 @@
-$(document).ready(function(){
+-$(document).ready(function(){
     $("a").on('click', function(event) {
       if (this.hash !== "") {
         event.preventDefault();
@@ -12,6 +12,7 @@ $(document).ready(function(){
     });
   });
 
+  
   $(".js-scroll-trigger").click(function() {
     $(".header__navbar").removeClass("active")
   })
@@ -28,7 +29,6 @@ document.getElementById('burger-menu').addEventListener('click', function(e){
   }
   e.stopPropagation();
 })
-
 
 
 
@@ -54,23 +54,10 @@ function scrollFunction() {
 }
 
 
-// paralax effect
-$('.banner').paroller();
-
-
-// fancybox images popup
-$(document).ready(function() {
-  $(".fancybox").fancybox();
-});
-
-
 // Background Animation
-setInterval(() => {
-  var cube = document.querySelector('.cube-container');
-  cube.style.opacity = '0';
-  cube.style.visibility = 'hidden';
-}, 4000);
-
+$(window).on('load', function  () {
+  $(".cube-container").fadeOut();
+});
 
 
 
@@ -84,7 +71,19 @@ $(document).on( 'scroll', function(){
 });
 
 
+// paralax effect
+$('.banner').paroller();
+
+
 
 // wow.js
 new WOW().init();
 
+
+
+// popup images
+$('.popup-img').magnificPopup({
+  type: 'image',
+  removalDelay: 200,
+  mainClass: 'mfp-fade',
+});
