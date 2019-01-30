@@ -22,19 +22,15 @@
 // open navbar
 document.getElementById('burger-menu').addEventListener('click', function(e){
   var navbar = document.getElementById('navbar');
-  if(navbar.className === 'header__navbar'){
-    navbar.className += ' active'
-  }else {
-    navbar.className = 'header__navbar';
-  }
+  navbar.classList.toggle('active');
+
   e.stopPropagation();
 })
 
 
 
 document.addEventListener('click', function(){
-  var navbar = document.getElementById('navbar');
-  navbar.className = 'header__navbar';
+  var navbar = document.getElementById('navbar').className = 'header__navbar';
 
   if(navbar.className = 'header__navbar active'){
       navbar.className = 'header__navbar';
@@ -64,9 +60,15 @@ $(window).on('load', function  () {
 // scroll__top icon show
 $(document).on( 'scroll', function(){
   if ($(window).scrollTop() > 100) {
-      $('#scrollTop').css({"opacity": '1', "visibility": "visible"});
+      $('#scrollTop').css({
+        "opacity": '1', 
+        "visibility": "visible"
+      });
   } else {
-      $('#scrollTop').css({"opacity": "0", "visibility": "hidden"});
+      $('#scrollTop').css({
+        "opacity": "0", 
+        "visibility": "hidden"
+      });
   }
 });
 
