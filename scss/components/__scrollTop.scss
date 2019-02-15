@@ -10,8 +10,7 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     text-indent: 100%;
-    opacity: 0;
-    visibility: hidden;
+    @include hidden;
     background: $color-yellow url(../images/cd-top-arrow.svg) no-repeat center 50%;
     transition: all 0.3s;
 

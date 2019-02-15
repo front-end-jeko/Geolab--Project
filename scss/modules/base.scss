@@ -30,6 +30,11 @@
     width: 100%;
 }
 
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+
 @media (max-width: 992px){
     .container {
         max-width: 720px;

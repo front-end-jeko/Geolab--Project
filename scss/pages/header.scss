@@ -61,11 +61,10 @@
             display: block;
             @include position($left: 0, $right: 0, $top:54px);
             height: 0px;
-            @include opacity();
             background-color: #212529;
             transition: height 0.3s, opacity 0.3s, visibility 0.3s;
                 &.active {
-                    @include opacity($opacity: 1, $visibility: visible);
+                    @include show;
                     height: 156px;
                 }
 

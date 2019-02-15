@@ -25,13 +25,11 @@
                     color: #cb2028;
                     font-size: 15px;
                     margin-top: 5px;
-                    opacity: 0;
-                    visibility: hidden;
+                    @include hidden;
                     transition: all 0.3s;
                     font-family:  $MontserratRegular;
                     &.show {
-                        opacity: 1;
-                        visibility: visible;
+                        @include show;
                     }
                 }
                 input {

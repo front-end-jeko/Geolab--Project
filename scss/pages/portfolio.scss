@@ -26,7 +26,7 @@
                     color: #fff;
                     @include center;
                     z-index: 100;
-                    @include opacity();
+                    @include hidden;
                     transition: all 0.5s;
                 }
         
@@ -40,16 +40,16 @@
                     color: $color-white;
                     font-weight: 900;
                     background-color: $color-yellow;
-                    @include opacity();
+                    @include hidden;
                     transition: 0.5s;
                 }
             
                 &:hover::after{
-                    @include opacity($opacity: 1, $visibility: visible);
+                    @include show;
                 }
         
                 &:hover .plus-icon{
-                    @include opacity($opacity: 1, $visibility: visible);
+                    @include show;
                 }
             }
         

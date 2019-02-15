@@ -1,5 +1,4 @@
 // smooth scrolling
-// Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -66,21 +65,22 @@ document.addEventListener('click', function(){
 
 
 
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
+window.onscroll = function() {
   var header = document.querySelector(".header");
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.className = 'header active';
   } else {
     header.className = 'header';
   }
-}
+};
+
 
 
 // Background Animation
-$(window).on('load', function  () {
-  $(".cube-container").fadeOut();
-});
+setTimeout(function(){
+  $('.cube-container').removeClass('active');
+}, 4000);
+
 
 
 
