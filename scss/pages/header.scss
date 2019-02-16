@@ -46,6 +46,7 @@
         height: 55px;
         padding: 0;
         background-color: #212529;
+
         &__content {
             &--nav-toggle {
                 display: block;
@@ -59,12 +60,14 @@
 
         .header__navbar {
             display: block;
-            @include position($left: 0, $right: 0, $top:54px);
+            @include position($left: 0, $right: 0, $top:40px);
             height: 0px;
             background-color: #212529;
-            transition: height 0.3s, opacity 0.3s, visibility 0.3s;
+            @include hidden;
+            transition: all 0.3s;
                 &.active {
                     @include show;
+                    top: 54px;
                     height: 156px;
                 }
 
@@ -87,25 +90,14 @@
 
 
 
-
-
 @media (max-width: 768px){
     .header {
         .header__navbar {
             &--ul {
-                max-width: 540px;
+                max-width: 580px;
                 margin: 0 auto;
-            }
-        }
-    }
-}
-
-
-
-@media (max-width: 570px){
-        .header__navbar {
-            &--ul {
                 padding: 0 15px;
             }
         }
     }
+}

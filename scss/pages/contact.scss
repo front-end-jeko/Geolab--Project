@@ -13,25 +13,26 @@
     }
 
     .contact__section{
-        margin-bottom: 20px;
-        @include display($justify: space-between);
+        &-inputs {
+            .form-group {
+                padding-right: 20px;
+                position: relative;
+            }
+        }
+
+        &-textarea {
+           height: 230px;
+        }
+
         &-inputs,
         &-textarea {
-            width: calc(50% - 15px);
-            .form-group {
-                margin-bottom: 30px;
+            width: 49.7%;
+            display: inline-block;
+            vertical-align: top;
 
-                .errorMessage {
-                    color: #cb2028;
-                    font-size: 15px;
-                    margin-top: 5px;
-                    @include hidden;
-                    transition: all 0.3s;
-                    font-family:  $MontserratRegular;
-                    &.show {
-                        @include show;
-                    }
-                }
+            .form-group {
+                margin-bottom: 40px;
+
                 input {
                     width: 100%;
                     height: 50px;
@@ -88,6 +89,7 @@
         &-textarea {
             .form-group{
                 height: 100%;
+                position: relative;
                 margin-bottom: 0;
             }
         }
@@ -100,6 +102,7 @@
 
         &-btn {
             @include display($justify: center);
+            margin-top: 30px;
             button {
                 cursor: pointer;
             }
@@ -112,6 +115,12 @@
     .contact {
         .contact__section {
             @include display($direction: column);
+
+            &-inputs {
+                .form-group {
+                    padding-right: 0;
+                }
+            }
 
             &-inputs,
             &-textarea {
