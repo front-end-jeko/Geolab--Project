@@ -39,14 +39,14 @@ $('a[href*="#"]')
 
 
   
-  $(".js-scroll-trigger").click(function() {
+  $(".js-scroll-trigger").click(() => {
     $(".header__navbar").removeClass("active")
   })
 
 
 
 // open navbar
-document.getElementById('burger-menu').addEventListener('click', function(e){
+document.getElementById('burger-menu').addEventListener('click', e => {
   var navbar = document.getElementById('navbar');
   navbar.classList.toggle('active');
 
@@ -55,7 +55,7 @@ document.getElementById('burger-menu').addEventListener('click', function(e){
 
 
 
-document.addEventListener('click', function(){
+document.addEventListener('click', () => {
   var navbar = document.getElementById('navbar').className = 'header__navbar';
 
   if(navbar.className = 'header__navbar active'){
@@ -65,7 +65,7 @@ document.addEventListener('click', function(){
 
 
 
-window.onscroll = function() {
+window.onscroll = () => {
   var header = document.querySelector(".header");
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     header.className = 'header active';
@@ -77,7 +77,7 @@ window.onscroll = function() {
 
 
 // Background Animation
-setTimeout(function(){
+setTimeout(() => {
   $('.cube-container').removeClass('active');
 }, 4000);
 
@@ -85,7 +85,7 @@ setTimeout(function(){
 
 
 // scroll__top icon show
-$(document).on( 'scroll', function(){
+$(document).on( 'scroll', () => {
   if ($(window).scrollTop() > 100) {
       $('#scrollTop').css({
         "opacity": '1', 
